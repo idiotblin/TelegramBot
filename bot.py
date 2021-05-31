@@ -58,28 +58,28 @@ def echo_message(message):
         if rnd < 11:
             bol = True
             bot.send_message(message.from_user.id, "Anekdot!!11!1!!")
-            joke = open(f'Anekdots\\{str(rnd)}.txt', 'r', encoding='utf-8').read()
+            joke = open(f'Anekdots/{str(rnd)}.txt', 'r', encoding='utf-8').read()
         elif rnd == 11:
             bot.send_message(message.from_user.id, "Anice or Nafice?")
-            joke = open(f'Anekdots\\aniceORnafice.jpg', 'rb').read()
+            joke = open(f'Anekdots/aniceORnafice.jpg', 'rb').read()
         elif rnd == 12:
             bot.send_message(message.from_user.id, "Derzhim arsk")
-            joke = open(f'Anekdots\\arsk.jpg', 'rb').read()
+            joke = open(f'Anekdots/arsk.jpg', 'rb').read()
         elif rnd == 13:
             bot.send_message(message.from_user.id, "Ti ne ti kogda goloden")
-            joke = open(f'Anekdots\\Karim.jpg', 'rb').read()
+            joke = open(f'Anekdots/Karim.jpg', 'rb').read()
         elif rnd == 14:
             bot.send_message(message.from_user.id, "Kogda poshel obedat', a Ram za tebya otmetilsya")
-            joke = open(f'Anekdots\\arthur.jpg', 'rb').read()
+            joke = open(f'Anekdots/arthur.jpg', 'rb').read()
         elif rnd == 15:
             bot.send_message(message.from_user.id, "Delu vremya - no kak nibud' potom")
-            joke = open(f'Anekdots\\haba.jpg', 'rb').read()
+            joke = open(f'Anekdots/haba.jpg', 'rb').read()
         elif rnd == 16:
             bot.send_message(message.from_user.id, "Lomau akk tvoey materi")
-            joke = open(f'Anekdots\\ram.jpg', 'rb').read()
+            joke = open(f'Anekdots/ram.jpg', 'rb').read()
         else:
             bot.send_message(message.from_user.id, "XGOD")
-            joke = open(f'Anekdots\\cam.jpg', 'rb').read()
+            joke = open(f'Anekdots/cam.jpg', 'rb').read()
         if not bol:
             bot.send_photo(message.from_user.id, joke)
         else:
