@@ -1,2 +1,3 @@
 sqlalchemy
 telebot
+psycopg2
